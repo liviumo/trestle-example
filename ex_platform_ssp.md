@@ -1,7 +1,7 @@
 Ex Platform SSP
 
 # Ex Platform overview
-This is the frontmatter for the EC Drupalcreate System Security Plan
+This is the frontmatter for the EX System Security Plan
 
 <!-- This iterates over the controls in a resolved catalog and prints out the control statement, summary table,
 and implemented requirements 

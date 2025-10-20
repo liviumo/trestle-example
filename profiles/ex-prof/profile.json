@@ -9,7 +9,7 @@
     },
     "imports": [
       {
-        "href": "trestle://catalogs/ex/catalog.json",
+        "href": "trestle://catalogs/ex-cat/catalog.json",
         "include-controls": [
           {
             "with-ids": [
