@@ -2,18 +2,18 @@
 x-trestle-global:
   profile:
     title: Ex Controls Profile
-    href: trestle://profiles/ex/profile.json
+    href: trestle://profiles/ex-prof/profile.json
 ---
 
-# AC.2.1.11 - \[\] REMOVAL OF TEMPORARY ACCOUNTS
+# AC.2.1.10 - \[\] AUTOMATED SYSTEM ACCOUNT MANAGEMENT
 
 ## Control Statement
 
-The information system automatically  disables temporary accounts after 1 day.
+The organization employs automated mechanisms to support the management of information system accounts
 
 ## Control guidance
 
-This control enhancement requires the removal of both temporary and emergency accounts automatically after a predefined period of time has elapsed, rather than at the convenience of the systems administrator.
+The CSP shall document the scope of the cloud service that is under the CSP’s control and the boundaries.
 
 ______________________________________________________________________
 
@@ -23,7 +23,7 @@ ______________________________________________________________________
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
- Req AC.2.1.11 is implemented because accounts are disabled within 24 hours for CMS component.
+Req AC.2.1.10 is implemented properly using profiles for CMS component.
 
 ### Implementation Status: implemented
 

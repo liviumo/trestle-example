@@ -2,18 +2,18 @@
 x-trestle-global:
   profile:
     title: Ex Controls Profile
-    href: trestle://profiles/ex/profile.json
+    href: trestle://profiles/ex-prof/profile.json
 ---
 
-# CP.9.1 - \[\] TESTING FOR RELIABILITY
+# AC.2.1.10 - \[\] AUTOMATED SYSTEM ACCOUNT MANAGEMENT
 
 ## Control Statement
 
-The organization tests backup information every 3 months to verify media reliability and information integrity.
+The organization employs automated mechanisms to support the management of information system accounts
 
 ## Control guidance
 
-Critical information system software includes, for example, operating systems, cryptographic key management systems, and intrusion detection/prevention systems
+The CSP shall document the scope of the cloud service that is under the CSP’s control and the boundaries.
 
 ______________________________________________________________________
 
@@ -23,7 +23,7 @@ ______________________________________________________________________
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
-Req CP.9.1 is implemented using the Disaster Recovery procedure for Cloud Storage component.
+Req AC.2.1.10 is implemented properly using the Access control and authentication procedure for EC-Pol-AC-Auth component.
 
 ### Implementation Status: implemented
 

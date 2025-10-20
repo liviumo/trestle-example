@@ -2,18 +2,18 @@
 x-trestle-global:
   profile:
     title: Ex Controls Profile
-    href: trestle://profiles/ex/profile.json
+    href: trestle://profiles/ex-prof/profile.json
 ---
 
-# CP.9.1 - \[\] TESTING FOR RELIABILITY
+# CM.8.2.2 - \[\] AUTOMATED MAINTENANCE
 
 ## Control Statement
 
-The organization tests backup information every 3 months to verify media reliability and information integrity.
+The organization employs automated mechanisms to help maintain an up-to-date, complete, accurate, and readily available inventory of information system components.
 
 ## Control guidance
 
-Critical information system software includes, for example, operating systems, cryptographic key management systems, and intrusion detection/prevention systems
+Organizations maintain information system inventories to the extent feasible.
 
 ______________________________________________________________________
 
@@ -23,7 +23,7 @@ ______________________________________________________________________
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
-Req CP.9.1 is implemented using the Disaster Recovery procedure for the CMS component.
+Req CM.8.2.2 is implemented using ITinv tool to  maintain an accurate inventory for CMS component.
 
 ### Implementation Status: implemented
 

@@ -2,7 +2,7 @@
 x-trestle-global:
   profile:
     title: Ex Controls Profile
-    href: trestle://profiles/ex/profile.json
+    href: trestle://profiles/ex-prof/profile.json
 ---
 
 # AC.2.1.11 - \[\] REMOVAL OF TEMPORARY ACCOUNTS
@@ -23,7 +23,7 @@ ______________________________________________________________________
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
-Req AC.2.1.11  is implemented using the IAM tool provided by the provider for Cloud Storage component.
+Req AC.2.1.11 is implemented because accounts are disabled within 24 hours for CMS component.
 
 ### Implementation Status: implemented
 

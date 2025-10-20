@@ -2,7 +2,7 @@
 x-trestle-global:
   profile:
     title: Ex Controls Profile
-    href: trestle://profiles/ex/profile.json
+    href: trestle://profiles/ex-prof/profile.json
 ---
 
 # AC.3.1.10 - \[\] DUAL AUTHORIZATION

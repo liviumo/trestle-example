@@ -2,18 +2,18 @@
 x-trestle-global:
   profile:
     title: Ex Controls Profile
-    href: trestle://profiles/ex/profile.json
+    href: trestle://profiles/ex-prof/profile.json
 ---
 
-# AC.2.1.11 - \[\] REMOVAL OF TEMPORARY ACCOUNTS
+# CM.8.2.2 - \[\] AUTOMATED MAINTENANCE
 
 ## Control Statement
 
-The information system automatically  disables temporary accounts after 1 day.
+The organization employs automated mechanisms to help maintain an up-to-date, complete, accurate, and readily available inventory of information system components.
 
 ## Control guidance
 
-This control enhancement requires the removal of both temporary and emergency accounts automatically after a predefined period of time has elapsed, rather than at the convenience of the systems administrator.
+Organizations maintain information system inventories to the extent feasible.
 
 ______________________________________________________________________
 
@@ -23,7 +23,7 @@ ______________________________________________________________________
 
 <!-- Note that the list of rules under ### Rules: is read-only and changes will not be captured after assembly to JSON -->
 
-Req AC.2.1.11  is implemented using the Access control and authentication procedure for EC-Pol-AC-Auth component
+Req CM.8.2.2 is implemented using ITinv tool to maintain an accurate inventory of information for Cloud Storage component.
 
 ### Implementation Status: implemented
 

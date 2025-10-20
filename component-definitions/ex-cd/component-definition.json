@@ -3,7 +3,7 @@
     "uuid": "4373c968-b26e-4920-8b7f-e91e581a1e6f",
     "metadata": {
       "title": "Generic component-definition created by trestle named ex-cd.",
-      "last-modified": "2025-10-10T09:26:54.336938+03:00",
+      "last-modified": "2025-10-19T08:40:42.002565+00:00",
       "version": "0.0.0",
       "oscal-version": "1.1.3",
       "links": [
@@ -35,7 +35,7 @@
       ]
     },
     "components": [
-	{
+      {
         "uuid": "795533ab-9427-4abe-820f-0b571ba22e6d",
         "type": "policy",
         "title": "EC-Pol-AC-Auth",
@@ -43,7 +43,7 @@
         "control-implementations": [
           {
             "uuid": "4e8bac83-a13c-4bca-9f3e-408a06997fbd",
-            "source": "trestle://profiles/ex/profile.json",
+            "source": "trestle://profiles/ex-prof/profile.json",
             "description": "Control implementations for the component EC-Pol-AC-Auth",
             "implemented-requirements": [
               {
@@ -83,7 +83,6 @@
           }
         ]
       },
-	  
       {
         "uuid": "6faf95a1-d7e4-4eef-9a3b-fd9b37a0f8f3",
         "type": "service",
@@ -92,7 +91,7 @@
         "control-implementations": [
           {
             "uuid": "4e8bac83-a13c-4bca-9f3e-408a06997ead",
-            "source": "trestle://profiles/ex/profile.json",
+            "source": "trestle://profiles/ex-prof/profile.json",
             "description": "Control implementations for Cloud Storage component",
             "implemented-requirements": [
               {
@@ -128,7 +127,6 @@
                   }
                 ]
               },
-            
               {
                 "uuid": "b3d13999-bed7-4e75-b951-e430f56993b8",
                 "control-id": "CM.8.2.2",
@@ -140,7 +138,7 @@
                   }
                 ]
               },
-			  {
+              {
                 "uuid": "b3d13999-bed7-4e75-b951-e430f56994b8",
                 "control-id": "CP.9.1",
                 "description": "Req CP.9.1 is implemented using the Disaster Recovery procedure for Cloud Storage component.",
@@ -151,9 +149,6 @@
                   }
                 ]
               }
-			  
-			  
-			  
             ]
           }
         ]
@@ -166,7 +161,7 @@
         "control-implementations": [
           {
             "uuid": "45da0e58-7761-4ae9-96c8-333999dfb0eb",
-            "source": "trestle://profiles/ex/profile.json",
+            "source": "trestle://profiles/ex-prof/profile.json",
             "description": "Control implementations for  CMS",
             "implemented-requirements": [
               {
@@ -183,7 +178,7 @@
               {
                 "uuid": "b3d13999-bed7-4e75-b951-e430f56883b2",
                 "control-id": "AC.2.1.11",
-                "description": " Req AC.2.1.11 is implemented because accounts are disabled within 24 hours for CMS component.",
+                "description": "Req AC.2.1.11 is implemented because accounts are disabled within 24 hours for CMS component.",
                 "props": [
                   {
                     "name": "implementation-status",
@@ -213,7 +208,7 @@
                   }
                 ]
               },
-			    {
+              {
                 "uuid": "b3d13999-bed7-4e75-b951-e430f56995b8",
                 "control-id": "CP.9.1",
                 "description": "Req CP.9.1 is implemented using the Disaster Recovery procedure for the CMS component.",
@@ -224,9 +219,6 @@
                   }
                 ]
               }
-			  
-			  
-			  
             ]
           }
         ]

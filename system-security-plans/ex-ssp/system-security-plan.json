@@ -1,0 +1,217 @@
+{
+  "system-security-plan": {
+    "uuid": "6ed39e2a-8486-4837-8e2e-4180c2a01c64",
+    "metadata": {
+      "title": "REPLACE_ME",
+      "last-modified": "2025-10-19T08:40:42.920914+00:00",
+      "version": "REPLACE_ME",
+      "oscal-version": "1.1.3"
+    },
+    "import-profile": {
+      "href": "trestle://profiles/ex-prof/profile.json"
+    },
+    "system-characteristics": {
+      "system-ids": [
+        {
+          "id": "REPLACE_ME"
+        }
+      ],
+      "system-name": "REPLACE_ME",
+      "description": "REPLACE_ME",
+      "system-information": {
+        "information-types": [
+          {
+            "title": "REPLACE_ME",
+            "description": "REPLACE_ME"
+          }
+        ]
+      },
+      "status": {
+        "state": "operational"
+      },
+      "authorization-boundary": {
+        "description": "REPLACE_ME"
+      }
+    },
+    "system-implementation": {
+      "users": [
+        {
+          "uuid": "b9c6d364-33da-4881-91a3-17153085c0fa"
+        }
+      ],
+      "components": [
+        {
+          "uuid": "795533ab-9427-4abe-820f-0b571ba22e6d",
+          "type": "policy",
+          "title": "EC-Pol-AC-Auth",
+          "description": "IT Sec Std Access control and authentication",
+          "status": {
+            "state": "operational"
+          }
+        },
+        {
+          "uuid": "6faf95a1-d7e4-4eef-9a3b-fd9b37a0f8f3",
+          "type": "service",
+          "title": "Cloud Storage",
+          "description": "Cloud Storage",
+          "status": {
+            "state": "operational"
+          }
+        },
+        {
+          "uuid": "9e8797ef-e6a8-4cb5-9ad6-c4e6343985c6",
+          "type": "software",
+          "title": "CMS",
+          "description": "Content management system.",
+          "status": {
+            "state": "operational"
+          }
+        },
+        {
+          "uuid": "a83e08ec-ea9c-4145-85bd-fac12d468745",
+          "type": "this-system",
+          "title": "This System",
+          "description": "",
+          "status": {
+            "state": "operational"
+          }
+        }
+      ]
+    },
+    "control-implementation": {
+      "description": "This is the control implementation for the system.",
+      "implemented-requirements": [
+        {
+          "uuid": "429c1158-8c47-4beb-8860-edabeede0d10",
+          "control-id": "AC.2.1.10",
+          "by-components": [
+            {
+              "component-uuid": "a83e08ec-ea9c-4145-85bd-fac12d468745",
+              "uuid": "d3029a86-19ba-4bdc-9b26-3ea9597f11ba",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "795533ab-9427-4abe-820f-0b571ba22e6d",
+              "uuid": "2f2009fd-28f0-466e-982b-3ddcb26e8671",
+              "description": "Req AC.2.1.10 is implemented properly for Cloud Storage component.",
+              "implementation-status": {
+                "state": "implemented"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "44b12ec5-d7e5-4fda-a195-5c05cdf9170a",
+          "control-id": "AC.2.1.11",
+          "by-components": [
+            {
+              "component-uuid": "a83e08ec-ea9c-4145-85bd-fac12d468745",
+              "uuid": "8bcd385d-18ba-45ee-b2ad-7ae2269478fa",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "795533ab-9427-4abe-820f-0b571ba22e6d",
+              "uuid": "a10dcae3-7a6a-40c5-9b10-c69252b48af0",
+              "description": "Req AC.2.1.11  is implemented using the Access control and authentication procedure for EC-Pol-AC-Auth component",
+              "implementation-status": {
+                "state": "implemented"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "f411a6c8-f8b1-4194-bbcf-ab0543da5381",
+          "control-id": "AC.3.1.10",
+          "by-components": [
+            {
+              "component-uuid": "a83e08ec-ea9c-4145-85bd-fac12d468745",
+              "uuid": "b7e9fc87-1fcd-430a-8e29-99ff0704f6ea",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "f3a7ab03-b746-4400-abad-a44f3a2700f0",
+          "control-id": "CM.8.2.2",
+          "by-components": [
+            {
+              "component-uuid": "a83e08ec-ea9c-4145-85bd-fac12d468745",
+              "uuid": "ed600abc-222a-47ac-89e0-2eee31fd2d78",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "6faf95a1-d7e4-4eef-9a3b-fd9b37a0f8f3",
+              "uuid": "e95b95cd-03d2-445c-8990-e70c606033a2",
+              "description": "Req CM.8.2.2 is implemented using ITinv tool to maintain an accurate inventory of information for Cloud Storage component.",
+              "implementation-status": {
+                "state": "implemented"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "f71887d2-4968-469c-bd56-09146ef7c616",
+          "control-id": "CP.9.1",
+          "by-components": [
+            {
+              "component-uuid": "a83e08ec-ea9c-4145-85bd-fac12d468745",
+              "uuid": "96ef7483-b3bc-43d4-89a0-da0b60db2d8a",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            },
+            {
+              "component-uuid": "9e8797ef-e6a8-4cb5-9ad6-c4e6343985c6",
+              "uuid": "bfcab503-481a-42a5-a67f-71218411d435",
+              "description": "Req CP.9.1 is implemented using the Disaster Recovery procedure for the CMS component.",
+              "implementation-status": {
+                "state": "implemented"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "f74e5a42-bfc9-4a1d-9d77-f76e22664bb2",
+          "control-id": "IA.5.1.4",
+          "by-components": [
+            {
+              "component-uuid": "a83e08ec-ea9c-4145-85bd-fac12d468745",
+              "uuid": "ae0d1ee8-a734-494e-94c3-1a58c046eddd",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        },
+        {
+          "uuid": "5e960891-98a7-4d60-b72b-7143b4742761",
+          "control-id": "CP.9.2",
+          "by-components": [
+            {
+              "component-uuid": "a83e08ec-ea9c-4145-85bd-fac12d468745",
+              "uuid": "a67620eb-af5c-4beb-939f-f86843597e1a",
+              "description": "",
+              "implementation-status": {
+                "state": "planned"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

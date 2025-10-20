@@ -11,10 +11,35 @@ x-trestle-add-props: []
   #     value: new property value
   #     smt-part: b.
   #
+x-trestle-evidence:
+  named-evidence: location
+x-trestle-dependent-on:
+  - control-id:
+    profile:
+reviewed-by:
+  - named:
+    date:
+x-trestle-fedramp-props:
+  control-origination:
+    - Service provider Corporate Ex
+    - Service provider System Specific Ex
+    - Service Provider Hybrid (Corporate and System Specific)
+    - Configured by Customer (Customer System Specific)
+    - Provided by Customer (Customer System Specific)
+    - Shared (Service Provider and Customer Responsibility)
+    - Inherited from pre-existing Authorization [Enter text here], Date of 
+      Authorization
+  implementation-status:
+    - Implemented
+    - Partially implemented
+    - Planned
+    - Alternative implementation
+    - Not Applicable
+  responsible-roles:
 x-trestle-global:
   profile:
     title: Ex Controls Profile
-    href: trestle://profiles/ex/profile.json
+    href: trestle://profiles/ex-prof/profile.json
 ---
 
 # CM.8.2.2 - \[\] AUTOMATED MAINTENANCE
