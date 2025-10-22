@@ -22,36 +22,18 @@ get_fedramp_control_tables().
 
 # Control responses and guidance
 
-## Access Control  \(AC\)
+## ACCOUNT MANAGEMENT  \(AC.2\)
 
 
-### AC-1 - Access Control Policy and Procedures
+### AC.2.1.10 - AUTOMATED SYSTEM ACCOUNT MANAGEMENT
 
 #### Control Statement
 
-The organization:
-
-- \[a.\] Develops, documents, and disseminates to [ACME Assigned: all personnel]:
-
-  - \[1.\] An access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
-  - \[2.\] Procedures to facilitate the implementation of the access control policy and associated access controls; and
-
-- \[b.\] Reviews and updates the current:
-
-  - \[1.\] Access control policy [ACME Assigned: monthly]; and
-  - \[2.\] Access control procedures [ACME Assigned: weekly].
+The organization employs automated mechanisms to support the management of information system accounts
 
 
-#### AC-1 Summary information
+#### AC.2.1.10 Summary information
 
-
-#### Table of Parameters
-
-| Parameter ID | Values | Label or Choices |
-|---|---|---|
-| AC-1 Personnel | all personnel | organization-defined personnel or roles |
-| AC-1 Policy Frequency | monthly | organization-defined frequency |
-| AC-1 Procedures Frequency | weekly | organization-defined frequency |
 
 #### What is the solution and how is it implemented?
 
@@ -59,84 +41,21 @@ The organization:
 
 ##### Implementation Status: planned
 
+#### Component: EC-Pol-AC-Auth
 
-### AC-2 - Account Management
-
-#### Control Statement
-
-The organization:
-
-- \[a.\] Identifies and selects the following types of information system accounts to support organizational missions/business functions: [ACME Assigned: privileged];
-
-- \[b.\] Assigns account managers for information system accounts;
-
-- \[c.\] Establishes conditions for group and role membership;
-
-- \[d.\] Specifies authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account;
-
-- \[e.\] Requires approvals by [Assignment: organization-defined personnel or roles] for requests to create information system accounts;
-
-- \[f.\] Creates, enables, modifies, disables, and removes information system accounts in accordance with [ACME Assigned: standard operations];
-
-- \[g.\] Monitors the use of information system accounts;
-
-- \[h.\] Notifies account managers:
-
-  - \[1.\] When accounts are no longer required;
-  - \[2.\] When users are terminated or transferred; and
-  - \[3.\] When individual information system usage or need-to-know changes;
-
-- \[i.\] Authorizes access to the information system based on:
-
-  - \[1.\] A valid access authorization;
-  - \[2.\] Intended system usage; and
-  - \[3.\] Other attributes as required by the organization or associated missions/business functions;
-
-- \[j.\] Reviews accounts for compliance with account management requirements [ACME Assigned: daily]; and
-
-- \[k.\] Establishes a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group.
-
-
-#### AC-2 Summary information
-
-
-#### Table of Parameters
-
-| Parameter ID | Values | Label or Choices |
-|---|---|---|
-| ac-2_prm_1 | privileged | organization-defined information system account types |
-| ac-2_prm_2 |  | organization-defined personnel or roles |
-| ac-2_prm_3 | standard operations | organization-defined procedures or conditions |
-| ac-2_prm_4 | daily | organization-defined frequency |
-
-#### What is the solution and how is it implemented?
-
-#### Component: This System
-
-Implement properly for This System component.
+Req AC.2.1.10 is implemented properly for Cloud Storage component.
 
 ##### Implementation Status: implemented
 
-#### Implementation for part d.
 
-#### Component: DB
-
-Implement well for component DB and part d.
-
-##### Implementation Status: partial
-
-
-## Custom Controls  \(CC\)
-
-
-### CC-1 - Energy consumption
+### AC.2.1.11 - REMOVAL OF TEMPORARY ACCOUNTS
 
 #### Control Statement
 
-All services should report energy consumed by their service.
+The information system automatically  disables temporary accounts after 1 day.
 
 
-####  Summary information
+#### AC.2.1.11 Summary information
 
 
 #### What is the solution and how is it implemented?
@@ -145,23 +64,24 @@ All services should report energy consumed by their service.
 
 ##### Implementation Status: planned
 
-#### Component: IDSERVICE
+#### Component: EC-Pol-AC-Auth
 
-##### Implementation Status: planned
+Req AC.2.1.11  is implemented using the Access control and authentication procedure for EC-Pol-AC-Auth component
 
-#### Component: DB
-
-##### Implementation Status: planned
+##### Implementation Status: implemented
 
 
-### CC-2 - Carbon reporting
+## ACCESS ENFORCEMENT  \(AC.3\)
+
+
+### AC.3.1.10 - DUAL AUTHORIZATION
 
 #### Control Statement
 
-All services must calculate and report total scope 3 energy consumption.
+The information system enforces dual authorization for organization-defined privileged commands
 
 
-####  Summary information
+#### AC.3.1.10 Summary information
 
 
 #### What is the solution and how is it implemented?
@@ -170,122 +90,18 @@ All services must calculate and report total scope 3 energy consumption.
 
 ##### Implementation Status: planned
 
-#### Component: IDSERVICE
 
-##### Implementation Status: planned
-
-
-## Identification and Authentication  \(IA\)
+## INFORMATION SYSTEM COMPONENT INVENTORY   \(CM.8\)
 
 
-### IA-5(1) - Password-based Authentication
+### CM.8.2.2 - AUTOMATED MAINTENANCE
 
 #### Control Statement
 
-The information system, for password-based authentication:
-
-- \[(a)\] Enforces minimum password complexity of [ACME Assigned: blocking the flow of the encrypted information, ACME internal method];
-
-- \[(b)\] Enforces at least the following number of changed characters when new passwords are created: [ACME Assigned: ACME internal method];
-
-- \[(c)\] Stores and transmits only cryptographically-protected passwords;
-
-- \[(d)\] Enforces password minimum and maximum lifetime restrictions of [ACME Assigned: ACME improved method];
-
-- \[(e)\] Prohibits password reuse for [ACME Assigned: ACME final method] generations; and
-
-- \[(f)\] Allows the use of a temporary password for system logons with an immediate change to a permanent password.
+The organization employs automated mechanisms to help maintain an up-to-date, complete, accurate, and readily available inventory of information system components.
 
 
-#### IA-5(1) Summary information
-
-
-#### Table of Parameters
-
-| Parameter ID | Values | Label or Choices |
-|---|---|---|
-| ia-5.1_prm_1 | blocking the flow of the encrypted information, ACME internal method | organization-defined requirements for case sensitivity, number of characters, mix of upper-case letters, lower-case letters, numbers, and special characters, including minimum requirements for each type |
-| ia-5.1_prm_2 | ACME internal method | organization-defined number |
-| ia-5.1_prm_3 | ACME improved method | organization-defined numbers for lifetime minimum, lifetime maximum |
-| ia-5.1_prm_4 | ACME final method | organization-defined number |
-
-#### What is the solution and how is it implemented?
-
-#### Component: This System
-
-##### Implementation Status: planned
-
-#### Implementation for part (a)
-
-#### Component: IDSERVICE
-
-##### Implementation Status: planned
-
-#### Component: DB
-
-##### Implementation Status: planned
-
-#### Implementation for part (e)
-
-#### Component: IDSERVICE
-
-##### Implementation Status: planned
-
-#### Component: DB
-
-##### Implementation Status: planned
-
-
-### IA-5(4) - Automated Support for Password Strength Determination
-
-#### Control Statement
-
-The organization employs automated tools to determine if password authenticators are sufficiently strong to satisfy [ACME Assigned: assistants].
-
-
-#### IA-5(4) Summary information
-
-
-#### Table of Parameters
-
-| Parameter ID | Values | Label or Choices |
-|---|---|---|
-| ia-5.4_prm_1 | assistants | organization-defined personnel or roles |
-
-#### What is the solution and how is it implemented?
-
-#### Component: This System
-
-##### Implementation Status: planned
-
-#### Component: IDSERVICE
-
-##### Implementation Status: planned
-
-#### Component: DB
-
-##### Implementation Status: planned
-
-
-## Privilege Rating  \(PR\)
-
-
-### PR-1 - Right to access and deletion of records
-
-#### Control Statement
-
-Any service or offering MUST:
-
-- \[a\] Have a privacy focal to respond to deletion requests.
-
-- \[b\] Have an automated method for allowing users to access all of their data
-
-- \[c\] Have an automated method to allow users to request, and subsequently execute, deletion of personal records.
-
-- \[d\] The process must be documented.
-
-
-####  Summary information
+#### CM.8.2.2 Summary information
 
 
 #### What is the solution and how is it implemented?
@@ -294,21 +110,24 @@ Any service or offering MUST:
 
 ##### Implementation Status: planned
 
-#### Component: IDSERVICE
+#### Component: Cloud Storage
 
-##### Implementation Status: planned
+Req CM.8.2.2 is implemented using ITinv tool to maintain an accurate inventory of information for Cloud Storage component.
 
-#### Component: DB
-
-##### Implementation Status: planned
+##### Implementation Status: implemented
 
 
-### PR-2 - Registering exemptions to right to delete
+## INFORMATION SYSTEM BACKUP  \(CP.9\)
+
+
+### CP.9.1 - TESTING FOR RELIABILITY
 
 #### Control Statement
 
+The organization tests backup information every 3 months to verify media reliability and information integrity.
 
-####  Summary information
+
+#### CP.9.1 Summary information
 
 
 #### What is the solution and how is it implemented?
@@ -317,65 +136,21 @@ Any service or offering MUST:
 
 ##### Implementation Status: planned
 
-#### Component: IDSERVICE
+#### Component: CMS
 
-##### Implementation Status: planned
+Req CP.9.1 is implemented using the Disaster Recovery procedure for the CMS component.
 
-#### Component: DB
-
-##### Implementation Status: planned
+##### Implementation Status: implemented
 
 
-## System and Communications Protection  \(SC\)
-
-
-### SC-1 - System and Communications Protection Policy and Procedures
+### CP.9.2 - TEST RESTORATION USING SAMPLING
 
 #### Control Statement
 
-The organization:
-
-- \[a.\] Develops, documents, and disseminates to [ACME Assigned: as needed]:
-
-  - \[1.\] A system and communications protection policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and
-  - \[2.\] Procedures to facilitate the implementation of the system and communications protection policy and associated system and communications protection controls; and
-
-- \[b.\] Reviews and updates the current:
-
-  - \[1.\] System and communications protection policy [ACME Assigned: hourly]; and
-  - \[2.\] System and communications protection procedures [ACME Assigned: bi-monthly].
+The organization uses a sample of backup information in the restoration of selected information system functions as part of contingency plan testing
 
 
-#### SC-1 Summary information
-
-
-#### Table of Parameters
-
-| Parameter ID | Values | Label or Choices |
-|---|---|---|
-| sc-1_prm_1 | as needed | organization-defined personnel or roles |
-| sc-1_prm_2 | hourly | organization-defined frequency |
-| sc-1_prm_3 | bi-monthly | organization-defined frequency |
-
-#### What is the solution and how is it implemented?
-
-#### Component: This System
-
-##### Implementation Status: planned
-
-#### Component: IDSERVICE
-
-##### Implementation Status: planned
-
-
-### SC-2 - Application Partitioning
-
-#### Control Statement
-
-The information system separates user functionality (including user interface services) from information system management functionality.
-
-
-#### SC-2 Summary information
+#### CP.9.2 Summary information
 
 
 #### What is the solution and how is it implemented?
@@ -384,6 +159,22 @@ The information system separates user functionality (including user interface se
 
 ##### Implementation Status: planned
 
-#### Component: DB
+
+## AUTHENTICATOR MANAGEMENT   \(IA.5\)
+
+
+### IA.5.1.4 - AUTOMATED SUPPORT FOR PASSWORD STRENGTH DETERMINATION
+
+#### Control Statement
+
+The organization employs automated tools to determine if password authenticators are sufficiently strong to satisfy requirements.
+
+
+#### IA.5.1.4 Summary information
+
+
+#### What is the solution and how is it implemented?
+
+#### Component: This System
 
 ##### Implementation Status: planned
