@@ -22,7 +22,7 @@
         {
           "uuid": "a37f870b-12f8-46d9-82c4-df9a3a559fb2",
           "type": "organization",
-          "name": "EC"
+          "name": "Ex"
         }
       ],
       "responsible-parties": [
@@ -38,8 +38,8 @@
 	{
         "uuid": "795533ab-9427-4abe-820f-0b571ba33f7e",
         "type": "service",
-        "title": "AWS-IAM",
-        "description": "AWS-IAM Identity and Access Management",
+        "title": "IAM",
+        "description": "IAM Identity and Access Management",
         "control-implementations": [
           {
             "uuid": "4e8bac83-a13c-4bca-9f3e-408a06997fbd",
@@ -49,7 +49,7 @@
               {
                 "uuid": "c9cbefe4-5c62-4a14-bbb6-91cb5768fbc8",
                 "control-id": "AC.2.1.10",
-                "description": "To be compliant with AC.2.1.10, none of your AWS IAM users have policies attached. IAM users must inherit permissions from IAM groups or rolesImplement properly for This System component",
+                "description": "To be compliant with AC.2.1.10, none of your  IAM users have policies attached. IAM users must inherit permissions from IAM groups or rolesImplement properly for This System component",
                 "props": [
                   {
                     "name": "implementation-status",
@@ -64,7 +64,7 @@
 	{
         "uuid": "795533ab-9427-4abe-820f-0b571ba22e6d",
         "type": "policy",
-        "title": "EC-Pol-AC-Auth",
+        "title": "Policy-AC",
         "description": "IT Sec Std Access control and authentication",
         "control-implementations": [
           {
@@ -112,7 +112,7 @@
       {
         "uuid": "6faf95a1-d7e4-4eef-9a3b-fd9b37a0f8f3",
         "type": "service",
-        "title": "Cloud-Storage",
+        "title": "Storage",
         "description": "Cloud Storage",
         "control-implementations": [
           {
